@@ -13,8 +13,8 @@ Keras DataGenerator draft used for different tasks
     - This is very good tutorial on DataGenerators: https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly.html
     - By using the blog post above, I wrote my own DataGenerator class for multi-task learning problem 
         - You need to give four text files for both training and testing (train-data.txt, train-label.txt, test-data.txt, test-label.txt)
-        - train-data.txt and test-data.txt contain train and test image file paths
-        - train-label.txt and test-label.txt contain label of train and test images
+        - train-data.txt and test-data.txt contain file paths of images
+        - train-label.txt and test-label.txt contain one-hot encoding vectors of image labels
         
 
 
