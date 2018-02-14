@@ -1,5 +1,5 @@
 # DataGeneratorDraft
-A draft code for Keras DataGenerator usage
+A draft code for usage of Keras-DataGenerator
 
 We have to keep in mind that in some cases, even the most state-of-the-art configuration won't have enough memory space to process the data the way we used to do it. That is the reason why we need to find other ways to do that task efficiently. In this blog post, we are going to show you how to generate the dataset at hand in real time while feeding it right away to your deep learning model.
 
