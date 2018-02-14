@@ -1,11 +1,14 @@
 # DataGeneratorDraft
-Keras DataGenerator draft used for different tasks
+A draft code for Keras DataGenerator usage
 
+We have to keep in mind that in some cases, even the most state-of-the-art configuration won't have enough memory space to process the data the way we used to do it. That is the reason why we need to find other ways to do that task efficiently. In this blog post, we are going to show you how to generate the dataset at hand in real time while feeding it right away to your deep learning model.
 
-- If your RAM is big enough for your problem, this kind of code block might solve your data read problem: 
+There might be three possible situations you encounter for reading data for your deep learning task specifically in Keras:
+
+- If your RAM is big enough for your problem, this kind of code block might solve your data reading problem: 
     - X, y = np.load('some_training_set_with_labels.npy')  # Load entire dataset
 
-- If your RAM is not big enough and you are doing simple classification (binary or multi-label classification), you can use ImageDataGenerator of Keras library directly. 
+- If your RAM is not big enough and you are doing a simple classification task (binary or multi-label classification), you can use ImageDataGenerator of Keras library directly. 
     - https://keras.io/preprocessing/image/
     - “.flow_from_directory(directory)” might help for reading images and their labels from directory and subdirectories.Subdirectories are used as labels.
 
@@ -16,8 +19,3 @@ Keras DataGenerator draft used for different tasks
         - train-data.txt and test-data.txt contain file paths of images
         - train-label.txt and test-label.txt contain one-hot encoding vectors of image labels
         
-
-
-
-
-
